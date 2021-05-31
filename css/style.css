@@ -1,0 +1,310 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background: -webkit-radial-gradient(top, #eedf0f , #14078d);
+}
+header{
+    width: 960px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    font-size: 14px;
+}
+
+.enlaces{
+    width: 400px;
+    height: 40px;
+    float: right;     
+    margin-top: 20px;  
+}
+.enlaces ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;  
+}
+.enlaces ul li{
+    display: inline;
+}
+.enlaces ul li a{
+    display: inline-block;
+    padding: 10px;
+    background-color: #02007a;
+    color: #ebe700;
+    font-weight: bold;
+    text-decoration: none;
+}
+.enlaces ul li a:hover{
+    color:rgb(15, 0, 219); 
+    background-color: rgb(246, 250, 0);  
+}
+.enlaces ul li a:active {
+    color: rgb(251, 255, 0);
+  }
+
+.enlaces ul li a:visited { 
+    color: rgb(241, 241, 241); 
+}
+.enlaces ul li a:link { 
+    color: rgb(230, 230, 230); 
+} 
+.contenido_principal{
+    width: 960px;
+    height: 800px;	 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.imagen1{
+    width: 350px;
+    height: 300px;
+    background-color: #d9e900;
+    float: left;
+    margin-bottom: 10px;
+    background-image: url(../img/boca.hinchada.jpg);
+    background-size: cover;
+}
+.presentacion{
+    width: 600px;
+    height: 300px;
+    background-color: #fdfdfd;
+    float: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.titulo{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+}
+.contenido_principal{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.contenido_segundo{
+    width: 250px;
+    height: 300px;
+    background-color: #e0e400;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.texto_contenido2{
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+.imagen2{
+    width: 440px;
+    height: 300px;
+    background-color: #f5e400;
+    float: left;
+    margin-bottom: 10px;
+    background-image: url(../img/tevez2.jpg);
+    background-size: cover;
+}
+.destacado{
+    width: 250px;
+    height: 300px;
+    background-color: #e0e000;
+    float: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;  
+}
+.contenido_destacado{
+    font-family:'Lato', sans-serif;
+    font-size: 30px;
+}
+.complementario{
+    width: 960px;
+    height: 180px;
+    background-color: #fdfdfd;
+    clear: both;  
+}
+.imagen_aside{
+    width: 960px;
+    height: 250px;
+    background-image: url(../img/bombonera.jpg);
+    background-size: cover;
+}
+.footer{
+    width: 960px;
+    height: 120px;
+    background-color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #fff018
+}
+.redes{
+    width: 200px;
+    height: 40px;
+    float: right;     
+    margin-top: 20px;  
+}
+.redes ul{
+    list-style-type: none;
+}
+/*comienzo responsive*/
+@media all and (min-width:600px) and (max-width:1023px ){
+
+    header{
+        width: 580px;
+        height: 140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        font-size: 12px;
+    }
+    .enlaces{
+        margin-top: 50px;
+    }
+    .enlaces ul li a{
+        display: inline-block;
+        padding: 10px;
+        background-color: #02007a;
+        color: #ebe700;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .contenido_principal{
+        width: 580px;
+        height: 800px;	 
+    }
+    .imagen1{
+        width: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+    .presentacion{
+        width: 370px;
+        height: 300px;
+    }
+
+    .contenido_segundo{
+        width: 285px;
+        height: 200px;
+    }
+    .texto_contenido2{
+        font-size: 10px;
+    }
+    .imagen2{
+        width: 285px;
+        height: 200px;
+        background-size: cover;
+    }
+    .destacado{
+        width: 580px;
+        height: 135px;
+
+    }
+    .contenido_destacado{
+        font-size: 18px;
+    }
+    .complementario{
+        width: 580px;
+        height: 130px;
+    }
+    .imagen_aside{
+        width: 580px;
+        height: 130px;
+
+    }
+    .footer{
+        width: 580px;
+    }
+    .redes{
+        width: 150px;
+        height: 40px;
+    }
+}
+/*fin de media 600 a 1023px*/
+
+@media all and (max-width:599px){
+    header{
+        width: 90px;
+        height: auto;
+    }
+    p{
+        font-size: 10px;
+    }
+    .enlaces{
+        width: 100%;
+        height: auto;
+        float: none; 
+        margin-top: 20px;
+    }
+    .enlaces ul{
+        margin:0;
+        padding: 0;
+        list-style-type: none;
+        float: none;  
+    }
+    .enlaces ul li{
+        display: block;
+    }
+    .enlaces ul li a{
+        display: block;
+        width: 100%;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .contenido_principal{
+        width: 90%;
+        height:auto;	 
+    }
+    .imagen1{
+        width: 100%;
+        height: 200px;
+        float: none;
+    }
+    .presentacion{
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .contenido_segundo{
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-right: 0;
+    }
+    .imagen2{
+        width: 100%;
+        height: 150px;
+        float: none;
+        margin-bottom: 10px;
+        background-position: center;
+    }
+    .destacado{
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .contenido_destacado{
+        font-size: 90%;
+    }
+    .complementario{
+        display: none;
+    }
+    .footer{
+        width: 90%;
+        height: auto;
+        float: none;
+    }
+    .redes{
+        width: 90%;
+        height: auto;
+        float: none;
+    }
+}
